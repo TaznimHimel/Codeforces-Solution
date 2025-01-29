@@ -3,14 +3,16 @@ using namespace std;
 
 int main()
 {
-    int i, j;
-    for (i = 0; i < 5; i++)
+    int a[5][5];
+    for (int i = 0; i < 5; i++)
     {
-        cin >> i;
-        for (j = i; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
-            cin >> j;
-            cout << i << " " << j << endl;
+            cin >> a[i][j];
+            if (a[i][j] == 1)
+            {
+                cout << abs(i - 2) + abs(j - 2) << endl;
+            }
         }
     }
     return 0;
