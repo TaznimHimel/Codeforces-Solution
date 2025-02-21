@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void solve()
+void lucky_number()
 {
-    string s[6];
-    cin >> s[0] >> s[1] >> s[2] >> s[3] >> s[4] >> s[5];
+    string s;
+    cin >> s;
     if (s[0] + s[1] + s[2] == s[3] + s[4] + s[5])
     {
         cout << "YES" << endl;
@@ -21,7 +21,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        solve();
+        lucky_number();
     }
     return 0;
 }
